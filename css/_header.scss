@@ -1,0 +1,151 @@
+/* HEADER */ 
+
+.header {
+    background-color: $background-color;
+    padding: $px-size*8 0;
+}
+
+.navbar {
+    margin-bottom: $px-size*13.4;
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-list {
+        display: none;
+        margin-top: $px-size*3;
+    }
+
+    .navbar__link {
+        font-size: $size*1.6;
+
+        &-special {
+            padding: 0 $px-size;
+        }
+    }
+
+    .navbar__item {
+        margin: $px-size/2;
+    }
+
+    .project__item {
+        margin: $px-size*2;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .navbar-list {
+        display: none;
+        margin-top: $px-size*3;
+    }
+
+    .navbar__link-special {
+        padding: 0 $px-size;
+    }
+
+    .project__item {
+        margin: $px-size*2;
+    }
+}
+
+
+.navbar-list--active {
+    display: block;
+}
+
+.navbar__link {
+    display: block;
+    color: $color-text;
+    padding: 0 $px-size;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: $size*0.1;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.navbar__link-special,
+.navbar__link:hover {
+    color: $main-color;
+}
+
+
+.navbar__btn {
+    width: $px-size*3;
+    height: $px-size*2.2;
+    position: relative;
+    margin: 0;
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        &__btn {
+            display: none;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__link-special {
+            padding: 0 $px-size/2 0 0;
+        }
+    }
+}
+
+.navbar__btn.active span:nth-child(1){
+    top: $px-size*0.9;
+    transform: rotate(135deg);
+}
+
+.navbar__btn.active span:nth-child(2){
+    opacity: 0;
+    left: -30px;
+}
+
+.navbar__btn.active span:nth-child(3){
+    top: $px-size*0.9;
+    transform: rotate(-135deg);
+}
+
+.navbar__btn-row {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: $px-size*0.4;
+    background-color: $color-text;
+    border-radius: $px-size*0.4;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+        top: 0;
+    }
+
+    &:nth-child(2) {
+        top: $px-size*0.9;
+    }
+
+    &:nth-child(3) {
+        top: $px-size*1.8;
+    }
+}

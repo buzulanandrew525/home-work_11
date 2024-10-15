@@ -1,0 +1,23 @@
+/* MAIN */ 
+
+.container {
+    width: 62%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hero__title,
+.about__title {
+    font-weight: 500;
+}
+
+.hero__btn,
+.hero__text,
+.about__text,
+.work-header__text {
+    line-height: $size*1.64;
+}

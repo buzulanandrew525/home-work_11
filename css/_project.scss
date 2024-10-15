@@ -1,0 +1,29 @@
+/* PROJECT */ 
+
+.project {
+    background-color: $main-color;
+    color: $color;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $px-size*10 0;
+}
+
+.project__item {
+    display: flex;
+    gap: $px-size*2;
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    gap: $px-size;
+}
+
+.project__number {
+    font-size: $size*1.31;
+}

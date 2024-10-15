@@ -1,0 +1,33 @@
+/* WORK */ 
+
+.work {
+    background-color: $background-color;
+}
+
+.work-header {
+    max-width: $px-size*60;
+    margin: 0 auto;
+    padding: $px-size*10 3% $px-size*5;
+    text-align: center;
+}
+
+.work-header__title {
+    color: $color-text;
+    font-size: $size*2;
+    line-height: $size*2.34;
+    margin-bottom: $px-size*5;
+}
+
+.work-header__text {
+    color: $workHeader-color;
+}
+
+.work-video {
+    max-width: $px-size*111;
+    padding-bottom: $px-size*10;
+}
+
+.work-video iframe {
+    width: 100%;
+    min-height: $px-size*60;
+}

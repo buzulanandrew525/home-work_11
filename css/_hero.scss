@@ -1,0 +1,41 @@
+/* HERO */ 
+
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__title {
+    font-size: $size*3;
+    font-weight: 500;
+    line-height: $size*4.92;
+    margin-bottom: $px-size*6;
+}
+
+.hero__text {
+    line-height: $size*1.64;
+    margin-bottom: $px-size*6.5;
+    color: $workHeader-color;
+    max-width: $px-size*54;
+}
+
+.hero__btn {
+    display: inline-block;
+    min-width: $px-size*22.5;
+    text-decoration: none;
+    color: $color;
+    background-color: $main-color;
+    padding: $px-size*2 2%;
+    line-height: $size*1.64;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3sec ease;
+    margin-bottom: $px-size*14;
+
+}
+
+.hero__btn:hover {
+    background-color: $hero-color;
+}

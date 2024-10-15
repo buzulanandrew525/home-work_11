@@ -1,0 +1,257 @@
+$size: 1rem;
+$px-size: 10px;
+$background-color: #EEEFF1;
+$main-color: #34547A;
+$color-text: #000;
+$color: #FFF;
+$workHeader-color: #727272;
+$hero-color: #517baa;
+
+@import 'reset';
+@import 'main';
+@import 'header';
+@import 'hero';
+@import 'about';
+@import 'project';
+@import 'work';
+@import 'footer';
+
+@media (max-width: 480px) {
+    .hero__title {
+        text-align: center;
+    }
+
+    .navbar {
+        &__link {
+            font-size: $size*1.5;
+        }
+
+        &__item {
+            margin: $px-size*2;
+        }
+    }
+
+    .project {
+        &-container {
+            justify-content: center;
+        }
+
+        &__item {
+            margin: $px-size*2;
+        }
+    }
+
+    .work {
+        &-video {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: $px-size*4;
+            max-width: $px-size*48;
+        }
+
+        &-video iframe {
+            height: $px-size*30;
+            width: $px-size*39;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar__link {
+        font-size: $size;
+    }
+
+    .work {
+        &-video {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            padding-bottom: $px-size*6;
+        }
+
+        &-video iframe {
+            height: $px-size*60;
+            width: $px-size*60;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        max-width: $px-size*61.1;
+    }
+
+    .hero__text {
+        width: $px-size*54;
+    }
+    
+    .project__item {
+        margin: $px-size*1.5;
+    }
+
+    .work-video {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding-bottom: $px-size*5;
+    }
+
+    .work-video iframe {
+        height: $px-size*70;
+        width: $px-size*76.8;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .about {
+        padding-top: $px-size*12;
+        padding-bottom: $px-size*8;
+    }
+    
+    .about-container {
+        margin-bottom: $px-size*4;
+    }
+
+    .project-container {
+        justify-content: center;
+        gap: $px-size*3;
+        padding: $px-size*5 0;
+    }
+
+    .project__item {
+        justify-content: center;
+        flex-basis: 25%;
+    }
+
+    .work-header {
+        padding: $px-size*6 3% $px-size*4;
+    }
+
+    .work-header__title {
+        margin-bottom: $px-size*4;
+    }
+
+    .work-video {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding-bottom: $px-size*6;
+    }
+
+    .work-video iframe {
+        height: $px-size*80;
+        width: $px-size*96;
+    }
+
+    .project__item {
+        margin: $px-size/2;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .about {
+        padding-top: $px-size*14;
+        padding-bottom: $px-size*9;
+
+        &-container {
+            margin-bottom: $px-size*5;
+        }
+    }
+
+    .project {
+        &-container {
+            justify-content: center;
+            gap: $px-size*4;
+            padding: $px-size*6 0;
+        }
+
+        &__item {
+            justify-content: center;
+            flex-basis: 25%;
+        }
+    }
+
+    .work {
+        &-header {
+            padding: $px-size*6 3% $px-size*4;
+            &__title {
+                margin-bottom: $px-size*4;
+            }
+        }
+        &-video {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            padding-bottom: $px-size*6;
+            & iframe {
+                height: $px-size*80;
+                width: $px-size*102.4;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .about {
+        padding-top: $px-size*15;
+        padding-bottom: $px-size*10;
+
+        &-container {
+            margin-bottom: $px-size*6;
+        }
+    }
+
+    .project {
+        &-container {
+            justify-content: center;
+            gap: $px-size*3;
+            padding: $px-size*5 0;
+        }
+
+        &__item {
+            justify-content: center;
+            flex-basis: 25%;
+        }
+    }
+
+    .work {
+        &-header {
+            padding: $px-size*6 3% $px-size*4;
+
+            &__title {
+                margin-bottom: $px-size*4;
+            }
+        }
+
+        &-video {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            padding-bottom: $px-size*6;
+
+            & iframe {
+                height: $px-size*90;
+                width: $px-size*128;
+            }
+        }
+
+    }
+}
+

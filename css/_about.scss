@@ -1,0 +1,22 @@
+/* ABOUT */ 
+
+.about {
+    padding-top: $px-size*11.2;
+    padding-bottom: $px-size*10;
+    background-color: $color;
+    &__title {
+        font-size: $size*2;
+        line-height: $size*3.92;
+        margin-bottom: $px-size*4;
+    }
+
+    &-container {
+        max-width: $px-size*60;
+        margin: 0 auto;
+        padding: 0 3%;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
